@@ -1,0 +1,60 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+/* google font roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100dvh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: auto;
+    text-transform: capitalize;
+
+}
+
+svg {
+    font-size: 10.5rem;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.text-copy {
+    fill: none;
+    stroke: tomato;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #4d163d;
+    animation-delay: -1;
+}
+.text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+}
+.text-copy:nth-child(3) {
+    stroke: #bd0034;
+    animation-delay: -3s;
+}
+.text-copy:nth-child(4) {
+    stroke: #bd0034;
+    animation-delay: -4s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
